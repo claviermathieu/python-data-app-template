@@ -1,4 +1,4 @@
-""" Interface FR 
+""" Genereic FR interface
 
 This file implement some useful functions for interactive Python terminal interface.
 """

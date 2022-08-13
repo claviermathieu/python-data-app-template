@@ -1,6 +1,6 @@
-""" Interface FR 
+""" Special utils
 
-This file implement some useful functions for interactive Python terminal interface.
+TSpecific utils for the app.
 """
 
 # Copyright (c) MClavier (mathieu.clavier@outlook.com - https://github.com/claviermathieu).
