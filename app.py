@@ -8,10 +8,10 @@
 # -----------------------------------------------------------------------------
 
 # Local packages
-from statistics import mean
 import lib.interface_generic_fr as gi
 import lib.interface_special_fr as si
 import lib.utils_generic as gu
+import lib.utils_special as gs
 
 # Public packages
 t = gi.start("Importation des packages")
