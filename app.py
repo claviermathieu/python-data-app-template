@@ -1,4 +1,4 @@
-"""A template code format from ipykernel team"""
+"""A template for datascience app. Code format from ipykernel team"""
 
 # Copyright (c) MClavier (mathieu.clavier@outlook.com - https://github.com/claviermathieu).
 # Distributed for personnal use
