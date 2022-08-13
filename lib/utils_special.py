@@ -1,6 +1,6 @@
 """ Special utils
 
-TSpecific utils for the app.
+Specific utils for the app.
 """
 
 # Copyright (c) MClavier (mathieu.clavier@outlook.com - https://github.com/claviermathieu).
