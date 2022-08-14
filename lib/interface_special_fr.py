@@ -20,7 +20,7 @@ def presentation(input_folder):
             "# Crédentials :\t MClavier (mathieu.clavier@outlook.com)",
             
             "\n\n# Objectifs : Définir l'objectif\n\n",
-            "-------------------------------------------------------------------------------------",
+            "---------------------------------------------------------------------------------------------------------",
             "* Input :",
             "\tBase de données issues de CGI",
             "\t- file1.csv",
@@ -29,7 +29,7 @@ def presentation(input_folder):
 
             "* Output :",
             "\t- output.csv \t fichier contenant tous les contrats du scope",
-            "-------------------------------------------------------------------------------------",
+            "---------------------------------------------------------------------------------------------------------",
             ""
         ])
         gi.pause()
