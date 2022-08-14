@@ -23,7 +23,7 @@ from tqdm import tqdm   # Barre de progès
 gi.end(t)
 
 # -----------------------------------------------------------------------------
-# Inputs
+# Inputs and outputs configuration
 # -----------------------------------------------------------------------------
 
 DEV_MODE = 0
@@ -95,9 +95,9 @@ gi.sub_title("Etape 1 : choisir les paramètre")
 # -----------------------------------------------------------------------------
 # Program end
 # -----------------------------------------------------------------------------
-
-gi.sub_title("Fermeture du programme :")
-gi.pause()
+if not DEV_MODE:
+    gi.sub_title("Fermeture du programme :")
+    gi.pause()
 
 
 
