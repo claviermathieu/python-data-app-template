@@ -96,4 +96,5 @@ gi.sub_title("Etape 1 : choisir les paramètre")
 # Program end
 # -----------------------------------------------------------------------------
 if not DEV_MODE:
+    os.startfile('output')
     input("\n\n# Fermeture du programme. Entrer pour continuer > ")
