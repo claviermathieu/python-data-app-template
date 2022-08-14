@@ -119,7 +119,7 @@ def menu_principal(input_folder):
         if choice == 1:
             input_folder = menu_input(input_folder)
         elif choice == 2:
-            main(input_folder)
+            pass
         elif choice == 7:
             menu_principal(input_folder)
         elif choice == 8:
