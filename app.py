@@ -96,4 +96,4 @@ gi.sub_title("Etape 1 : choisir les paramètre")
 # Program end
 # -----------------------------------------------------------------------------
 if not DEV_MODE:
-    input("\n# Fermeture du programme. Entrer pour continuer > ")
+    input("\n\n# Fermeture du programme. Entrer pour continuer > ")

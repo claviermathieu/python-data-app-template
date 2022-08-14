@@ -100,13 +100,12 @@ def describe(my_list):
 # Menu
 # -----------------------------------------------------------------------------
 
-
 def menu_principal(input_folder):
         title("Menu principal")
         describe([
             "Que souhaitez-vous faire ?",
             
-            "\n\t1. Gestion des inputs",
+            "\n\t1. Gestion des inputs (actuellement : " + input_folder + ")",
             "\t2. Exécuter le programme",
 
             "\n\t7. Menu principal",
@@ -140,6 +139,8 @@ def menu_input(input_folder):
         "\n\t1. Visualiser les dossiers diponibles",
         "\t2. Modifier le dossier d'input sélectionné",
         "\t3. Visualiser les fichiers présents",
+        "\t4. Ouvrir le dossier 'input'",
+        "\t5. Ouvrir le dossier 'input/" + input_folder + "'",
     
         "\n\t7. Retour au menu principal",
         "\t8. A propos",
@@ -149,7 +150,7 @@ def menu_input(input_folder):
     print("# Dossier actuellement sélectionné :", input_folder)
     print("#----------------------------------------------------------------------\n")
     # Get choice
-    choice = input_menu(3)
+    choice = input_menu(5)
 
     # View folder available
     if choice == 1:
@@ -173,6 +174,16 @@ def menu_input(input_folder):
         print("--------------------------------------")
         pause()
         menu_input(input_folder)
+    # Open input folder
+    elif choice == 4:
+        os.startfile('input')
+        pause()
+        menu_input(input_folder)
+    # Open sub-input folder
+    elif choice == 5:
+        os.startfile('input\\' + input_folder)
+        pause()
+        menu_input(input_folder)
     # Main menu
     elif choice == 7:
         menu_principal(input_folder)
@@ -182,7 +193,7 @@ def menu_input(input_folder):
     # Quit
     elif choice == 9:
         if input_confirm():
-            exit
+            exit(0)
         else:
             menu_input(input_folder)
     else:
@@ -196,7 +207,7 @@ def menu_input(input_folder):
 
 def quit(input_folder):
     if input_confirm():
-            exit
+            exit(0)
     else:
         menu_principal(input_folder)
 
@@ -213,59 +224,3 @@ def start(my_str):
 
 def end(t):
     print("OK/", (datetime.now() - t).seconds, "secondes")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
