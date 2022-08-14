@@ -50,8 +50,6 @@ input_folder = 'input/' + input_folder + '/'
 # Read data
 # -----------------------------------------------------------------------------
 
-os.listdir(input_folder)
-
 # Read data
 t = gi.start("Lecture des données")
 df = pd.read_csv(input_folder + 'donnee-dep-corr.csv', sep = ";")
