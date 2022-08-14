@@ -18,7 +18,7 @@ t = gi.start("Importation des packages")
 import os
 import numpy as np
 import pandas as pd
-import pandas_profiling as pp
+# import pandas_profiling as pp
 from tqdm import tqdm   # Barre de progès
 gi.end(t)
 
