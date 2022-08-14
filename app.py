@@ -50,6 +50,8 @@ input_folder = 'input/' + input_folder + '/'
 # Read data
 # -----------------------------------------------------------------------------
 
+gi.title("Programme principal")
+
 # Read data
 t = gi.start("Lecture des données")
 df = pd.read_csv(input_folder + 'donnee-dep-corr.csv', sep = ";")
@@ -64,11 +66,6 @@ if DATA_EXPLORATION:
 # -----------------------------------------------------------------------------
 # Main program
 # -----------------------------------------------------------------------------
-
-gi.title("Programme principal")
-
-# -----------------------------------------------------------------------------
-# Phase 1
 
 gi.sub_title("Etape 1 : choisir les paramètre")
 
