@@ -26,7 +26,7 @@ gi.end(t)
 # Inputs and outputs configuration
 # -----------------------------------------------------------------------------
 
-DEV_MODE = 0
+DEV_MODE = 1
 INPUT_FOLDER = "delits 2022-06-22"
 if not DEV_MODE:
     # Get input folder
