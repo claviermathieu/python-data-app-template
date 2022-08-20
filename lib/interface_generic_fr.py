@@ -10,6 +10,14 @@ import os
 from datetime import datetime
 import lib.interface_special_fr as si
 
+from rich.console import Console
+from rich.theme import Theme
+custom_theme = Theme({
+    "info": "dim cyan",
+    "warning": "magenta",
+    "danger": "bold red"
+})
+
 # -----------------------------------------------------------------------------
 # Inputs
 # -----------------------------------------------------------------------------
@@ -93,8 +101,9 @@ def sub_title(monTitre):
     print("# " + monTitre + "\n")
 
 def describe(my_list):
+    console = Console(theme=custom_theme)
     for i in range(len(my_list)):
-        print(my_list[i])
+        console.print(my_list[i])
 
 # -----------------------------------------------------------------------------
 # Menu

@@ -20,6 +20,7 @@ import numpy as np
 import pandas as pd
 # import pandas_profiling as pp
 from tqdm import tqdm   # Barre de progès
+from rich import print
 gi.end(t)
 
 # -----------------------------------------------------------------------------
@@ -70,6 +71,23 @@ if DATA_EXPLORATION:
 gi.sub_title("Etape 1 : choisir les paramètre")
 
 
+from rich.theme import Theme
+custom_theme = Theme({
+    "info": "dim cyan",
+    "warning": "magenta",
+    "danger": "bold red"
+})
+
+
+print("[warning]test[/warning]")
+
+
+
+
+
+gi.describe([
+    "[bold u dim cyan]OUTILS[/bold /u dim cyan]!"
+])
 
 
 
@@ -79,7 +97,7 @@ gi.sub_title("Etape 1 : choisir les paramètre")
 
 
 
-
+print("Hello, [bold u dim cyan]World[/bold /u di]!", ":vampire:")
 
 
 
